@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #CDCDCD;
+    width: 100%;
+    min-width: 250px;
+}
+
+header {
+    background-color: #333;
+    height: 50px;
+}
+
+/* section,
+footer {
+    margin: 0 auto;
+    width: 600px;
+} */
+
+@media screen and (max-width: 420px) {
+    section,
+    footer {
+        margin: 0 auto;
+        width: 90%;
+    }
+    #form>label{
+        font-size: 16px;
+    }
+    #title {
+        width: 50%;
+    }
+    #weather {
+        flex-direction: column;
+    }
+    .boxItems {
+        margin: 0 auto;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        width: 80%;
+        border-top: 1px solid #333;
+    }
+    #weather>div:first-child .boxItems {
+        border: 0;
+    }
+    .boxItems p,
+    .boxItems h3,
+    .boxItems h4 {
+        font-size: 16px;
+        font-weight: normal;
+        display: inline-block;
+    }
+    .boxItems p {
+        border-right: 2px solid #333;
+        padding-right: 3px;
+        float: left;
+    }
+    .boxItems h3 {
+        padding-left: 3px;
+        float: left;
+    }
+    .boxItems h4 {
+        float: right;
+    }
+    #weather>div:first-child .boxItems p,
+    #weather>div:first-child .boxItems h3,
+    #weather>div:first-child .boxItems h4 {
+        text-align: center;
+        display: block;
+        float: none;
+        border: 0;
+        margin-bottom: 10px;
+    }
+    #weather>div:first-child .boxItems p {
+        padding-left: 6px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    #weather>div:first-child .boxItems h3 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    #weather>div:first-child .boxItems h4 {
+        padding-left: 10px;
+    }
+}
+@media screen and (min-width: 421px) {
+    section,
+    footer {
+        margin: 0 auto;
+        width: 400px;
+    }
+    .boxItems {
+        text-align: center;
+        border-left: 1px solid #333;
+    }
+    .boxItems p {
+        font-size: 14px;
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .boxItems h3 {
+        font-size: 18px;
+        display: block;
+        margin-top: 15px;
+        /* font-size: 26px; */
+    }
+    .boxItems h4 {
+        font-size: 12px;
+        display: block;
+        margin: 15px 0 20px 0;
+        /* font-size: 14px; */
+        font-weight: normal;
+    }
+}
+@media screen and (min-width: 720px) {
+    section,
+    footer {
+        margin: 0 auto;
+        width: 600px;
+    }
+    .boxItems {
+        text-align: center;
+        border-left: 1px solid #333;
+    }
+    .boxItems p {
+        font-size: 16px;
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .boxItems h3 {
+        font-size: 26px;
+        display: block;
+        margin-top: 15px;
+        /* font-size: 26px; */
+    }
+    .boxItems h4 {
+        font-size: 14px;
+        display: block;
+        margin: 15px 0 20px 0;
+        /* font-size: 14px; */
+        font-weight: normal;
+    }
+}
+@media screen and (min-width: 820px) {
+    section,
+    footer {
+        margin: 0 auto;
+        width: 700px;
+    }
+    .boxItems {
+        text-align: center;
+        border-left: 1px solid #333;
+    }
+    .boxItems p {
+        font-size: 16px;
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .boxItems h3 {
+        font-size: 26px;
+        display: block;
+        margin-top: 15px;
+        /* font-size: 26px; */
+    }
+    .boxItems h4 {
+        font-size: 14px;
+        display: block;
+        margin: 15px 0 20px 0;
+        /* font-size: 14px; */
+        font-weight: normal;
+    }
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    /* width: 20%; */
+    height: 50px;
+    color: #CDCDCD;
+    font-size: 24px;
+    line-height: 50px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#title {
+    outline: none;
+    border-radius: 5px;
+    /* width: 60%; */
+    flex: 2;
+    height: 25px;
+    border: 0;
+    /* float: right; */
+    margin-top: 12.5px;
+    padding-left: 15px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+h2 span {
+    color: #333;
+    font-size: 14px;
+    float: right;
+    padding-top: 12px;
+}
+
+ol,ul {
+    line-height: 32px;
+}
+
+li {
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    border-left: solid 5px green;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    opacity: .5;
+}
+
+li #check {
+    /* position: absolute;
+    top: 6px;
+    left: 10px; */
+    /* width: 20px;
+    height: 20px; */
+    flex: 1;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 0 3px 0 3px;
+}
+
+li p {
+    /* margin-left: 45px;
+    width: 92%; */
+    flex: 20;
+    position: relative;
+}
+
+li a {
+    /* position: absolute;
+    top: 0;
+    right: 10px; */
+    flex: 1;
+    min-width: 32px;
+    margin: 0 3px 0 3px;
+}
+
+p input {
+    height: 20px;
+    width: 90%;
+    /* width: 90%;
+    margin: -2px 0 0 40px; */
+    padding-left: 10px;
+    outline: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* 天气预报模块 */
+#weather {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 0;
+}
+
+#weather>div {
+    flex: 1;
+}
+
+.boxItems {
+    width: 90%;
+    overflow: hidden;
+}
+
+/* .boxItems p {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+} */
+
+/* .boxItems h3 {
+    display: block;
+    margin-top: 15px;
+    font-size: 26px;
+} */
+
+/* .boxItems h4 {
+    display: block;
+    margin: 15px 0 20px 0;
+    font-size: 14px;
+    font-weight: normal;
+} */
+
+#weather>div:first-child .boxItems {
+    border: 0;
+}
